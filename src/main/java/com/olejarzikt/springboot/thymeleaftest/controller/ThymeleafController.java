@@ -9,7 +9,7 @@ public class ThymeleafController {
 
     @GetMapping("/thymeleaf")
     public String sayHello(Model theModel) {
-        theModel.addAttribute("theData",new java.util.Date());
+        theModel.addAttribute("theDate",new java.util.Date());
         return "helloworld";
     }
 }
